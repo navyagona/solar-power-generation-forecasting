@@ -1,0 +1,33 @@
+{
+    "model_type": "StackingRegressor",
+    "base_estimators": [
+        "XGBoost",
+        "LightGBM",
+        "Random Forest"
+    ],
+    "meta_estimator": "LinearRegression",
+    "requires_scaling": false,
+    "scaling_method": null,
+    "scaling_note": "Model trained on raw features - NO SCALING NEEDED",
+    "training_period": "2023",
+    "test_period": "2024-2025",
+    "total_training_samples": 35040,
+    "total_test_samples": 35232,
+    "performance": {
+        "test_r2": 0.995463358996077,
+        "test_rmse": 13.000956919651621,
+        "test_mae": 5.508434639319595,
+        "train_r2": 0.9972091540825829,
+        "train_rmse": 10.509189297092401,
+        "train_mae": 4.546752786488125
+    },
+    "created_date": "2025-12-17 20:51:36",
+    "python_version": "3.x",
+    "libraries": {
+        "scikit-learn": "1.4.2",
+        "xgboost": "2.0.3",
+        "lightgbm": "4.6.0",
+        "pandas": "2.3.3",
+        "numpy": "1.26.4"
+    }
+}
